@@ -6,7 +6,7 @@
 /*   By: rnoriko <rnoriko@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 19:11:16 by rnoriko           #+#    #+#             */
-/*   Updated: 2022/01/20 03:10:27 by rnoriko          ###   ########.fr       */
+/*   Updated: 2022/01/20 23:58:02 by rnoriko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int	main(int argc, char *argv[])
 
 	memset(&info, 0, sizeof(info));
 	if (argc != 5 && argc != 6)
-		return (ft_puterror("ERROR: wrong argc\n"));
+		return (ft_puterror("ERROR: wrong arg's\n"));
 	if (initialization_philosophers(&info, argc, argv))
 		return (1);
 	create_philosophers(&info);
