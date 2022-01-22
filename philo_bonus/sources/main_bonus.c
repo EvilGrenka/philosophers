@@ -6,7 +6,7 @@
 /*   By: rnoriko <rnoriko@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 20:52:33 by rnoriko           #+#    #+#             */
-/*   Updated: 2022/01/21 00:30:33 by rnoriko          ###   ########.fr       */
+/*   Updated: 2022/01/21 17:29:12 by rnoriko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,5 @@ int	main(int argc, char *argv[])
 		pthread_create(&thread, NULL, monitor_each_must_eat, &info);
 	pthread_create(&thread, NULL, finish_monitor, &info);
 	join_and_free_philosophers(&info);
-	exit(1);
 	return (0);
 }
